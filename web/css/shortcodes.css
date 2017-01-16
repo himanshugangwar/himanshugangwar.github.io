@@ -1,0 +1,193 @@
+/* ********************************************************************
+Columns  Styles 
+******************************************************************** */
+
+.textblock-section{ margin-bottom: 30px; }
+
+/* One Half */
+.cl-one-half,
+.cl-one-half-last {
+	margin-right: 3%;
+	width: 47%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.cl-one-half-last {
+	margin-right: 0;
+	clear: right;
+}
+
+/* One Third */
+
+.cl-one-third,
+.cl-one-third-last {
+	margin-right: 6%;
+	width: 29.333333333333332%;
+	float: left;
+}
+
+.cl-one-third-last {
+	margin-right: 0;
+	clear: right;
+}
+
+/* Two Third */
+
+.cl-two-third,
+.cl-two-third-last {
+	margin-right: 6%;
+	width: 58.6%;
+	float: left;
+}
+
+.cl-two-third-last {
+	margin-right: 0;
+	clear: right;
+}
+
+
+/* One Fourth */
+
+.cl-one-fourth,
+.cl-one-fourth-last {
+	margin-right: 6%;
+	width: 20.5%;
+	float: left;
+}
+
+.cl-one-fourth-last {
+	margin-right: 0;
+	clear: right;	
+}
+
+/* Three Fourth */
+
+.cl-three-fourth {
+	margin-right: 6%;
+	width: 73.5%;
+}
+
+.cl-three-fourth-last {
+	margin-right: 0%;
+}
+
+/* One Fifth */
+
+.cl-one-fifth,
+.cl-one-fifth-last {
+	margin-right: 6%;
+	width: 15.2%;
+	float: left;
+}
+
+.cl-one-fifth-last {
+	margin-right: 0;
+	clear: right;	
+}
+
+
+
+/* *********************************************************
+	Buttons
+********************************************************* */
+
+.cl-submit-reset {border: none; background-color: inherit; }
+
+.cl-btn{
+	display: inline-block; 
+	margin: 10px 0; 
+	text-align: center;
+	padding: 12px 16px 10px;
+	font-size: 13px;
+	min-width: 90px;
+	font-weight: 500;
+	font-size: 1.1em;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Roboto Slab', serif;
+	border-radius: 3px;
+}
+
+.cl-btn:hover{color: #fff;}
+
+ 
+.cl-btn.cl-btn-sqr{ border-radius: none; } 
+
+.cl-btn-green{
+	background-color: #2f9b68;
+	color: #fff;
+}
+
+.cl-btn-light-green{
+	background-color: #4bbabe;
+	color: #fff;
+}
+
+.cl-btn-green-bordered{
+	background-color: #4bbabe;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.cl-btn.cl-btn-small{
+	padding: 9px 10px 7px;
+	font-size: 13px;
+	min-width: 80px;
+}
+
+.cl-btn.cl-btn-large{
+	padding: 15px 30px 13px;
+	font-size: 13px;
+	min-width: 127px;
+}
+
+.cl-btn-full{
+	width: 100%;	
+}
+
+.cl-btn-standard{
+	background-color: #fff;
+	border: 1px solid #e1e1e1;
+	color: #121212;
+}
+
+.cl-btn-standard:hover{ background-color: #4bbabe; border-color: #4bbabe; }
+
+.cl-btn-bordered { 
+	border: 1px solid #fff; 
+	color: #fff;
+	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	-o-transition: .5s all ease;
+	transition: .5s all ease;
+}
+
+.cl-btn-bordered:hover { background-color: #4bbabe; border-color: #4bbabe;  }
+
+/* *********************************************************
+	Backgrounds Colors and Pattenrs 
+********************************************************* */
+
+.cl-small-padding { padding: 10px 0; }
+
+.cl-mid-padding { padding: 20px 0; }
+
+.cl-padding{ padding: 40px 0; }
+
+.cl-big-padding{ padding: 60px 0; }
+
+.cl-main-pattern { background-image: url('../img/pattern.png'); background-repeat: repeat;}
+
+.cl-dark-blue { background-color: #474747; }
+
+.cl-light-grey{ background-color: #fbfbfb; }
+
+.cl-medium-grey { background-color: #f3f3f3; }
+
+.cl-center-text{
+	margin: 0 auto 10px;
+	width: 70%;
+}
+
+
