@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>NEW Page</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="material-cards.css">
+    <link rel="stylesheet" href="making_model.css">
+    <script src="jquery-3.0.0.min.js"></script>
+    <script src="jquery-1.11.1.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style type="text/css">
+
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            background-color: #ECEFF1;
+            color: #37474F;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 200;
+        }
+.pop-outer, .pop-outer2{
+background-color:rgba(0,0,0,0.5);
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+ z-index:99999;
+}
+.pop-inner, .pop-inner2{
+background-color:#e0e0e0;
+width:300px;
+height:360px;
+padding: 25px;
+margin:15% auto;
+box-sizing: border-box;
+width: 260px;
+margin: 100px auto 0;
+box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+padding-bottom: 40px;
+border-radius: 3px;
+}
+.pop-inner h1, .pop-inner2 h1{
+  font-family: 'roboto', sans-serif;
+  height: 200px;
+  width: 100%;
+  font-size: 18px;
+  background: #18aa8d;
+  color: white;
+  line-height: 150%;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+   box-sizing: border-box;
+  padding: 20px;
+  margin-top: 20px;
+}
+.submission, .submission2, .plans{
+  border: none;
+  background: #1abc9c;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 210px;
+  color: white;
+  margin-top: 7px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.submission:hover, .submission2:hover, .plans:hover{
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.close{
+    margin-bottom:10px;
+    color:#000000;
+}
+    </style>
+    <script type="text/javascript">
+$(document).ready(function(){
+$(".pay_image1").click(function(){
+$('.pop-outer').fadeIn('slow');
+});
+$(".close").click(function(){
+$('.pop-outer').fadeOut('slow');
+});
+});
+$(document).ready(function(){
+$(".pay_image2").click(function(){
+$('.pop-outer2').fadeIn('slow');
+});
+$(".close").click(function(){
+$('.pop-outer2').fadeOut('slow');
+});
+});
+        </script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+    $(function(){
+
+var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+
+  $('[data-modal-id]').click(function(e) {
+    e.preventDefault();
+    $("body").append(appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+    var modalBox = $(this).attr('data-modal-id');
+    $('#'+modalBox).fadeIn($(this).data());
+  });  
+  
+  
+$(".js-modal-close, .modal-overlay").click(function() {
+  $(".modal-box, .modal-overlay").fadeOut(500, function() {
+    $(".modal-overlay").remove();
+  });
+});
+ 
+$(window).resize(function() {
+  $(".modal-box").css({
+    top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+    left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+  });
+});
+ 
+$(window).resize();
+ 
+});
+    </script>
+</head>
+<body>
+<section class="container">
+    <div class="page-header">
+        <h1>Usage Modes<br>
+            <small>You can choose among the given below modes to continue:</small></h1>
+    </div>
+    <div class="row active-with-click">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Red">
+                <h2>
+                    <span>Pay per use</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        <h5>Pay and verify
+                        </h5>
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="payit.jpg">
+                    </div>
+                    <div class="mc-description">
+                        In this mode, use of our application is metered. You will be charged whenever you want to use our application. If you prefer this mode, then you can verify only one document per pay.
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Payment
+                    </h4>
+                    <a class="imager">
+                        <img class="pay_image1" src="credit_card_.png" >
+                    </a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Pink">
+                <h2>
+                    <span>Pay from Credit</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                       <h5> Purchase Credit and verify
+                        </h5>
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="cashier.jpg">
+                    </div>
+                    <div class="mc-description">
+                        This mode supports deferred payment. If you prefer this usage mode, then you have to purchase credits. Then you can verify your document while spending credits.  
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Payment
+                    </h4>
+                     <a class="imager2">
+                        <img class="pay_image2" src="credit_card_.png">
+                    </a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Purple">
+                <h2>
+                    <span>Monthly Subscription</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                       <h5>Subscribe monthly and verify
+                        </h5>
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="month.jpg">
+                    </div>
+                    <div class="mc-description">
+                        In this mode, you need to subscribe on monthly basis. After subscribing, you can verify as many as documents during that month. After the period is over, you need to subscribe again or switch to other usage mode.
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Payment
+                    </h4>
+                      <a class="imager">
+                        <img class="pay_image3" src="credit_card_.png">
+                    </a>
+                </div>
+            </article>
+        </div>
+        </div>
+</section>
+      <div style="display:none;" class="pop-outer">
+   <div class="pop-inner">
+       <button class="close">X</button>
+       <h1> My name is sachin </h1>
+       <button class="submission">Prepay</button>
+   </div>
+</div>
+      <div style="display:none;" class="pop-outer2">
+   <div class="pop-inner2">
+       <button class="close">X</button>
+       <h1> i am what i am.</h1>
+       <button class="plans" href="#" data-modal-id="popup">Check our Plans</button>
+       <form name="final2_form"method="POST" action="open_doc_verify">
+           <input type="submit" class="submission2" id="verify_it" name="Verify Doc" value="Verify Documents"/>
+       </form>
+   </div>
+</div>
+    
+    <div id="popup" class="modal-box">  
+  <header>
+    <h3>Credit Plans</h3>
+  </header>
+        <form name="modular" method="POST" action="next_payment" >    
+  <div class="modal-body">
+      <div id="plan_one">
+    <p>Plan 1</p>
+    <h6>In this plan, you have to pay Rs. 500 and then you will get 10 credits i.e. one credit cost Rs.50 in
+    this case. In this plan, you can verify 1 document with 1 credit, so if you pay Rs. 500 then you will get 10
+    credits and hence you can verify 10 documents in this plan.</h6>
+    <button id="plan_one_b" type="submit" name="button" value="button1">Prepay</button>
+      </div>
+      <div id="plan_two">
+    <p>Plan 2</p>
+    <h6>In this plan, you have to pay Rs. 800 and one credit cost Rs. 50. Hence you will get 16+4 credits i.e.
+    4 extra credits. In this plan you can verify 1 document by spending 1 credit. So, you can verify 20 documents
+    by choosing this plan.</h6>
+     <button id="plan_two_b" type="submit" name="button" value="button2">Prepay</button>
+      </div>
+  </div>
+            </form> 
+        <button class="js-modal-close" id="closure" value="closure_button">Close</button>
+</div>
+<script>
+    $(function() {
+        $('.material-card > .mc-btn-action').click(function () {
+            var card = $(this).parent('.material-card');
+            var icon = $(this).children('i');
+            icon.addClass('fa-spin-fast');
+
+            if (card.hasClass('mc-active')) {
+                card.removeClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-arrow-left')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-bars');
+
+                }, 800);
+            } else {
+                card.addClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-bars')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-arrow-left');
+
+                }, 800);
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Verify Document</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+<style>
+h2, input::-webkit-input-placeholder {
+  font-family: 'roboto', sans-serif;
+ -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+h1, h2{
+  font-family: 'roboto', sans-serif;
+  font-size: 18px;
+  color: white;
+  line-height: 150%;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+h1{
+  width: 100%;
+  background: #18aa8d;
+  height: 100px;
+}
+h2{
+  width: 300px;
+  background: #c0392b;
+  height: 80px;
+}
+form h2 {
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 10px;
+}
+#heading{
+  box-sizing: border-box;
+  width:100%;
+  margin: 10px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  border-radius: 6px;
+}
+#heading h1{
+  box-sizing: border-box;
+  padding: 20px;
+}
+form{
+  box-sizing: border-box;
+  width: 300px;
+  margin-left: 20px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+}
+input {
+  margin: 40px 25px;
+  width: 240px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #1abc9c;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 99%, #1abc9c 1%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 99%, #1abc9c 1%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #0e6252;
+}
+input:focus, input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+  color: #1abc9c;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  visibility: visible !important;
+}
+#plan_one_b{
+  width: 6em;  height: 2.5em;
+  padding-top: 10px;
+  display: block;
+  margin: 7px auto;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 60%;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);  
+  transition: background-color .3s;
+    background-color: #7f8c8d;
+  color: white;
+}
+#plan_one_b:hover{
+  background-color: #7f8c8d;
+}
+#plan_one_b span{
+  display: block;
+  padding: 12px 24px;
+}
+#plan_one_b:before{
+  content: "";
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0;
+  padding-top: 0;
+  border-radius: 100%;
+  background-color: #c0392b;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#plan_one_b:active:before{
+  width: 120%;
+  padding-top: 120%;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+</style>
+<script type="text/javascript">
+    function fill_data(){
+        var num_doc_cred=document.getElementById("docu").value;
+        document.getElementById("cre").value=num_doc_cred+" = Rs "+(num_doc_cred*50)+" will be spend";
+    }
+</script>
+</head>
+<body>
+<div id="heading">
+<h1>Verify Your Document</h1>
+<form name="credit_modular" method="POST" action="credit_spending">
+<h2>Verification Form</h2>
+<input placeholder="Number of documents to be verified" type="text" id="docu" required="" onchange="fill_data()">
+<input placeholder="Credits Spend" type="text" id="cre" disabled="" >
+ <button type="submit" id="plan_one_b" onclick="run_executable()">Submit</button>
+</form>
+</div> 
+</body>
+</html>
