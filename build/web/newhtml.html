@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Welcome to this site</title>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+<link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
+rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="styler.css">
+<SCRIPT TYPE="text/javascript"> 
+    function validateEmail(email) { 
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+ } 
+ function continueOrNot() {
+     var letters = /^[A-Za-z]+$/; 
+    if(!validateEmail(document.getElementById('email_pass').value))
+    {
+    alert("email not valid"); 
+        return false;
+    }
+    else if(document.getElementById('repair_pass').value!=document.getElementById('retype_pass').value)
+    {
+        alert("password and retype password don't match");
+        return false;
+    }
+    else if(!document.getElementById("user_number").value.match(letters))
+    {
+        alert('Please input alphabet characters only');  
+      return false; 
+    }
+ } 
+ function continueOrNotsignin(){
+      if(!validateEmail(document.getElementById('email_pass_one').value))
+    {
+    alert("email not valid"); 
+        return false;
+    }
+ }
+</SCRIPT>
+<!--[if IE]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+                    <form name="myform_one" method="POST" action="newhtml_one" onsubmit="return continueOrNotsignin()" >
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="email_pass_one" type="text" class="input" name="reg_email_one"  required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+                                                                                          <input id="pass" type="password" class="input" data-type="password" name="reg_pass_one" required>
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" name="checker_signer" checked required>
+					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign In">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+			</div>
+                    </form>
+                    <form name="myform" method="POST" action="newhtml" onsubmit="return continueOrNot()" >
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user_number" type="text" class="input" name="reg_user" required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="repair_pass" type="password" class="input" data-type="password" name="reg_pass"  required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Repeat Password</label>
+					<input id="retype_pass" type="password" class="input" data-type="password"  required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="email_pass" type="text" class="input" name="reg_email"  required>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" id="btnShow" value="Sign Up" required>
+				</div>
+                                                                      <div id="dialog" style="display: none" align = "center">
+                                                                              You have been registered successfully.
+                                                                     </div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Already Member?</a>
+				</div>
+			</div>
+                             
+    </form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

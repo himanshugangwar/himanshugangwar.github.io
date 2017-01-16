@@ -1,0 +1,124 @@
+/* ----------------------------------------------------------------------------------------------
+    1200px Resolution
+---------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1200px){
+
+}
+
+/* ----------------------------------------------------------------------------------------------
+    1024px Resolution
+---------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px){
+    
+
+}
+
+/* ----------------------------------------------------------------------------------------------
+    992px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 992px){
+
+	/* *********************************************************
+		Main Menu Styles 
+	********************************************************* */
+	.cl-main-nav-container .cl-main-nav li a{ padding: 35px 8px; }
+	
+	.cl-portfolio-item { height: 250px; }
+
+	.cl-portfolio-item  .cl-portfolio-overlay { bottom: -75%; }
+
+	.cl-portfolio-item:hover > .cl-portfolio-overlay { bottom: 35%; }
+	
+	.cl-portfolio-item .cl-portfolio-overlay { height: 65%; }
+
+	.cl-blog-article .blog-thumb { height: 107px; }
+	
+	.filters .filter { padding: 15px 20px; }
+	
+	.cl-blog-article .blog-thumb { height: 140px; }
+
+
+}/* End of 992 Px */
+
+/* ----------------------------------------------------------------------------------------------
+    768px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 768px){
+
+
+#mobile-holder{	display: block; }
+
+div.sticky-wrapper { height: 120px; }
+
+.cl-main-nav-container .cl-main-nav li {
+	list-style: none;
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.cl-main-nav-container .cl-main-nav li a { padding: 16px 8px; }
+
+.cl-main-nav-container .cl-main-nav li a:after{ content: ''; }
+
+.filters{ padding: 0; } 
+
+.cl-portfolio-item .cl-portfolio-overlay { height: 100%; bottom: -100%; }
+.cl-portfolio-item:hover > .cl-portfolio-overlay { bottom: 0%; }
+
+.cl-blog-article .blog-thumb { height: 200px; }
+
+.cl-newsletter .cl-submit-control { width: 100%; }
+
+.cl-copyright { text-align: center; }
+.cl-copyright .col-sm-6 p{ margin-top: 10px; }
+.cl-copyright .cl-social-footer { text-align: center; }
+ 
+}
+
+/* ----------------------------------------------------------------------------------------------
+    640px max and min 620px Resolution
+---------------------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 767px){
+
+}
+
+/* ----------------------------------------------------------------------------------------------
+    640px max and min 620px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 640px) {
+ 
+.filters .filter { padding: 15px 10px; margin: 10px 0 0 -5px; font-size: .9em; }
+ 
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+    568px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 568px){
+
+.main-header { height: auto; }
+
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+    480px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 480px){
+
+.filters .filter { padding: 15px 6px; margin: 10px 0 0 -5px; font-size: .8em; }
+
+}
+
+/* ----------------------------------------------------------------------------------------------
+    320px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 320px){
+     
+}
